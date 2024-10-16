@@ -1,0 +1,200 @@
+.body-content {
+    background-image: linear-gradient(#CDF0F7, #FFFFFF);
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: #0056b3;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Add space above the buttons */
+  }
+  
+  .form-buttons button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .full-box{
+    margin-bottom: 250px;
+  }
+
+  /* Table container */
+.table-container {
+    position: relative;
+    overflow-x: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px 0;
+    background-color: #fff;
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #333;
+    text-align: center; /* Align text to the center */
+    vertical-align: middle;
+  }
+  
+  /* Table Header */
+  .table-header {
+    background-color: #2d3748; /* Dark Gray */
+    color: #f7fafc; /* Light text for contrast */
+    text-transform: uppercase;
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: bold;
+    text-align: center; /* Align text in header to the center */
+  }
+  
+  /* Table header cells */
+  .table-header th {
+    padding: 12px 24px;
+  }
+  
+  /* Table Body */
+  .table-body-row {
+    border-bottom: 1px solid #e2e8f0; /* Light border */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Align table body cells to the center */
+  }
+  
+  .table-body-row:hover {
+    background-color: #edf2f7; /* Subtle hover effect */
+  }
+  
+  /* Table cells */
+  .table-cell {
+    padding: 16px 24px;
+    color: #4a5568; /* Darker gray for better contrast */
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center; /* Align text in cells to the center */
+  }
+  
+  .table-cell-dark {
+    color: #fff; /* For dark mode or contrast enhancement */
+  }
+  
+  /* Action buttons container */
+  .actions-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .read-buttons {
+    background-color: #38a169;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .read-buttons:hover {
+    background-color: #268653;
+  }
+  
+  
+  .edit-buttons {
+    background-color: #f6ad55;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-buttons:hover {
+    background-color: #e2902b;
+  }
+  
+  .leftConer{
+    margin-left: 200px;
+  }
+
+  /* Container for input and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin: 20px; /* Space around the container */
+    margin-left: 210px;
+}
+
+/* Input field styles */
+.search-box {
+    padding: 8px 15px; /* Padding inside the input */
+    border: 2px solid #007BFF; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 250px; /* Fixed width */
+    transition: border-color 0.3s; /* Transition effect for focus */
+}
+
+/* Input field focus effect */
+.search-box:focus {
+    outline: none; /* Remove default outline */
+    border-color: #0056b3; /* Darker border color on focus */
+}
+
+.search-button {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #828488; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.search-button:hover {
+    background-color: #545455; /* Darker background color on hover */
+}
+
+/* Disabled button styles */
+.search-button:disabled {
+    background-color: #cccccc; /* Gray background for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}

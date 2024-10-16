@@ -1,0 +1,8 @@
+.partners-section {
+    display: flex;
+    gap: 20px; /* Space between the images */
+    padding: 20px;
+    height: 90px;
+    width: 100px;
+    margin-left: 320px;
+  }

@@ -1,0 +1,81 @@
+.body-content {
+    padding: 20px;
+}
+
+.sign-up-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #f4f4f9;*/
+    background-image: linear-gradient(#CDF0F7, #FFFFFF);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sign-up-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.sign-up-image img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px 0 0 10px;
+}
+
+.sign-up-form {
+    padding: 20px;
+    flex: 1;
+}
+
+.sign-up-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5e60ce;
+}
+
+.sign-up-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.sign-up-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5e60ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sign-up-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up-form a {
+    color: #5e60ce;
+    text-decoration: none;
+}
+
+.sign-up-form a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.password-checkbox{
+    margin-left: -10px;
+}

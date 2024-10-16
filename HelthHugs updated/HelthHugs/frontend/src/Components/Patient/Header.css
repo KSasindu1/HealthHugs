@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+  background-color: #FEFCFC;
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto; /* Align links to the right */
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  margin-left: 20px;
+}
+
+.auth-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.register {
+  background-color: #2b6cb0;
+  color: white;
+}
+
+.sign-up {
+  background-color: #48bb78;
+  color: white;
+}

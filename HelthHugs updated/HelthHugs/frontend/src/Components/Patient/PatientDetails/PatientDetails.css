@@ -1,0 +1,261 @@
+.body-content {
+  background-image: linear-gradient(#CDF0F7, #FFFFFF);
+  padding: 20px;
+}
+
+.tab-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.box-decoration {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.img-display {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.image-upload-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.image-upload-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.image-upload-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #5a6268;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-details input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.selectOpt{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Add space above the buttons */
+}
+
+.form-buttons button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Create button */
+.form-buttons button[type="submit"] {
+  background-color: #547dee;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: #2531e2;
+}
+
+/* Table container */
+.table-container {
+  position: relative;
+  overflow-x: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #333;
+  text-align: center; /* Align text to the center */
+  vertical-align: middle;
+}
+
+/* Table Header */
+.table-header {
+  background-color: #2d3748; /* Dark Gray */
+  color: #f7fafc; /* Light text for contrast */
+  text-transform: uppercase;
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  font-weight: bold;
+  text-align: center; /* Align text in header to the center */
+}
+
+/* Table header cells */
+.table-header th {
+  padding: 12px 24px;
+}
+
+/* Table Body */
+.table-body-row {
+  border-bottom: 1px solid #e2e8f0; /* Light border */
+  transition: background-color 0.3s ease;
+  text-align: center; /* Align table body cells to the center */
+}
+
+.table-body-row:hover {
+  background-color: #edf2f7; /* Subtle hover effect */
+}
+
+/* Table cells */
+.table-cell {
+  padding: 16px 24px;
+  color: #4a5568; /* Darker gray for better contrast */
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center; /* Align text in cells to the center */
+}
+
+.table-cell-dark {
+  color: #fff; /* For dark mode or contrast enhancement */
+}
+
+/* Action buttons container */
+.actions-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.read-buttons {
+  background-color: #38a169;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-buttons:hover {
+  background-color: #268653;
+}
+
+
+.edit-buttons {
+  background-color: #f6ad55;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-buttons:hover {
+  background-color: #e2902b;
+}
+
+.leftConer{
+  margin-left: 200px;
+}
