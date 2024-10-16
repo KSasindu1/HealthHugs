@@ -3,6 +3,19 @@ import { Route, Routes } from "react-router";
 import HomePage from "./Components/Home/HomePage";
 import MainHome from "./Components/Home/MainHome";
 import AdminDash from "./Components/Home/AdminDash";
+
+//Patient
+import Home from './components/Patient/Home/Home';
+import Login from './components/Patient/Login/Login';
+import SignUp from './components/Patient/SignUp/SignUp';
+import LogHome from "./components/Patient/Logout/LogHome";
+import SearchPatient from './components/Patient/PatientDetails/SearchPatient';
+import PatientDetails from './components/Patient/PatientDetails/PatientDetails';
+import ReadPatient from './components/Patient/PatientDetails/ReadPatient';
+import UpdatePatient from './components/Patient/PatientDetails/UpdatePatient';
+import MedicalHistoryDetails from './components/Patient/MedicalHistoryDetails/MedicalHistoryDetails';
+import UpdateMedicalHistoryDetails from './components/Patient/MedicalHistoryDetails/UpdateMedicalHistoryDetails';
+
 /*Pharmacy */
 import HomePharmacy from "./Components/Pharmacy/Home/Home";
 import FAQPharmacy from "./Components/Pharmacy/Home/FAQ";
@@ -55,7 +68,6 @@ import AdmitHome from "./Components/Admit/Home/Home";
 import ViewAdmit from "./Components/Admit/Display/Display";
 import AdminDisplayPage from "./Components/Admit/Admin/AdminDisplayPage";
 import UpdateData from "./Components/Admit/Display/UpdateData";
-import AdmitSummry from "./Components/Admit/AdmitPatient/AdmitSummry";
 /*payment */
 import AddPayment from "./Components/PaymentFunction/User/AddPayment";
 import PaymentSummary from "./Components/PaymentFunction/User/PaymentSummary";
@@ -79,17 +91,29 @@ import AdmitLog from "./Components/Admit/Admin/AdmitLog";
 import PaymentLogin from "./Components/PaymentFunction/Staff/PaymentLogin";
 import DentalDoctorLogin from "./Components/Dental/Staff/DentalDoctorLogin";
 import EditAdmitData from "./Components/Admit/Admin/EditAdmitData";
-import DischargeAdmit from "./Components/Admit/Admin/DischargeAdmit";
 
 function App() {
   return (
     <div>
       <React.Fragment>
         <Routes>
-          <Route path="/" element={<MainHome />} />
+          <Route path="/mainhome" element={<MainHome />} />
           <Route path="/homepage" element={<HomePage />} />
           <Route path="/admindashHome" element={<AdminDash />} />
           <Route path="/admindashHomelogin" element={<AdminLoginHome />} />
+
+          {/* Patient Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<SignUp />} />
+          <Route path='/loghome' element={<LogHome />} />
+          <Route path="/search-details" element={<SearchPatient />} />
+          <Route path="/patients-details" element={<PatientDetails />} />
+          <Route path="/readpatient/:id" element={<ReadPatient />} />
+          <Route path="/updatepatient/:id" element={<UpdatePatient />} />
+          <Route path="/medical-history/:id" element={<MedicalHistoryDetails />} />
+          <Route path="/updatemedical-history/:id" element={<UpdateMedicalHistoryDetails />} />
+
           {/*=======================================PHARMACY======================================= */}
           <Route path="/pharmacyHome" element={<HomePharmacy />} />
           <Route path="/faq" element={<FAQPharmacy />} />
@@ -168,10 +192,8 @@ function App() {
           <Route path="/admitdetails" element={<ViewAdmit />} />
           <Route path="/adminAdmit" element={<AdminDisplayPage />} />
           <Route path="/admitlog" element={<AdmitLog />} />
-          <Route path="/admitSummry" element={<AdmitSummry />} />
           <Route path="/admitUpdate/:id" element={<UpdateData />} />
           <Route path="/admitadminUpdate/:id" element={<EditAdmitData />} />
-          <Route path="/discharge/:id" element={<DischargeAdmit />} />
           {/*=======================================PAYMENT======================================= */}
           <Route path="/paynow" element={<AddPayment />} />
           <Route path="/paymentSummry" element={<PaymentSummary />} />
