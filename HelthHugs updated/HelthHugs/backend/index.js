@@ -8,6 +8,12 @@ const app = express();
 app.use(cors({ origin: "http://localhost:5173" }));
 
 // Link Routes
+const registerRoute = require("./Routes/registerRoute.js");
+const loginRoute = require("./Routes/loginRoute.js");
+const patientRoute = require("./Routes/patientRoute.js");
+const medicalHistoryRoute = require("./Routes/medicalHistoryRoute.js");
+const searchPatientRoute = require("./Routes/searchPatientRoute.js");
+
 const PharmacyOrderRoute = require("./Routes/PharmacyOrderRoutes.js");
 const PharmacyShopRoute = require("./Routes/PharmacyShopRoute.js");
 const DoctorAppointmentRoute = require("./Routes/DoctorAppointmentRoute.js");
@@ -26,6 +32,12 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.use('/register', registerRoute);
+app.use('/login', loginRoute);
+app.use('/patients', patientRoute);
+app.use('/search', searchPatientRoute);
+app.use('/medicalhistory', medicalHistoryRoute);
+
 app.use("/pharmacyorder", PharmacyOrderRoute);
 app.use("/pharmacyshop", PharmacyShopRoute);
 app.use(
